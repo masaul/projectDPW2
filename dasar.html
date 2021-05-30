@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Online</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz Online</h1>
+    </header>
+    <main>
+        <!-- Menampilkan Soal dan Jawaban nomer 1 -->
+        <div class="page" id="page-1" style="display: block;">
+            <div class="container">
+                    <div class="number">
+                        <p>Soal Ke-1</p>
+                    </div>
+                    <div id="soal-1" class="question">
+                        <p>tag &#60;ol&#62; digunakan untuk membuat list...</p>
+                    </div>
+                    <div id="jawaban-1" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>List tidak terurut</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>List terurut</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>List tunggal</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>List jamak</p>
+                        </div>
+                    </div>
+                    <!-- Button  -->
+                    <div id="button-1" class="button">
+                        <div class="back" id="back-1" onclick="backButton1()">
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                            <span class="writing-arrow"><a href="halamanAwal.html">Keluar</a></span>
+                        </div>
+                        <div class="next" id="next-1" onclick="nextButton1()">
+                            <span class="writing-arrow">Next</span>
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 2 -->
+        <div class="page" id="page-2" style="display: none;">
+            <div class="container">
+                    <div class="number">
+                        <p>Soal Ke-2</p>
+                    </div>
+                    <div id="soal-2" class="question">
+                        <p>Jika kita ingin membuat drop-down list, kita perlu menggunkan tag...</p>
+                    </div>
+                    <div id="jawaban-2" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>&#60;drop-down&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>&#60;select&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>&#60;input type="drop-down"&#62;</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>&#60;input type="drop-up"&#62;</p>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div id="button-2" class="button">
+                        <div class="back" id="back-2" onclick="backButton2()">
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                            <span class="writing-arrow">Back</span>
+                        </div>
+                        <div class="next" id="next-2" onclick="nextButton2()">
+                            <span class="writing-arrow">Next</span>
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 3 -->
+        <div class="page" id="page-3" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-3</p>
+                </div>
+                <div id="soal-3" class="question">
+                        <p>Dalam atribut style properti yang digunakan untuk menentukan jenis huruf yaitu...</p>
+                </div>
+                <div id="jawaban-3" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>font-size</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>text-font</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>font-family</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>background-color</p>
+                        </div>
+                </div>
+                <div id="button-3" class="button">
+                    <div class="back" id="back-3" onclick="backButton3()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-3" onclick="nextButton3()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 4 -->
+        <div class="page" id="page-4" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-4</p>
+                </div>
+                <div id="soal-4" class="question">
+                        <p>Untuk membuat komentar di HTML adalah...</p>
+                </div>
+                <div id="jawaban-4" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Dimulai dengan &#60;!-- diakhiri dengan --&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Dimulai dengan // dan diakhiri dengan //</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Dimulai dengan // dan diakhiri dengan *//</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Tidak ada jawaban yang benar</p>
+                        </div>
+                </div>
+                <div id="button-4" class="button">
+                    <div class="back" id="back-4" onclick="backButton4()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-4" onclick="nextButton4()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 5 -->
+        <div class="page" id="page-5" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-5</p>
+                </div>
+                <div id="soal-5" class="question">
+                        <p>Perintah HTML untuk membuat text berjalan adalah...</p>
+                </div>
+                <div id="jawaban-5" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Tag form</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Tag body</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Tag marquee</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Tag tr</p>
+                        </div>
+                </div>
+                <div id="button-5" class="button">
+                    <div class="back" id="back-5" onclick="backButton5()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-5" onclick="nextButton5()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 6 -->
+        <div class="page" id="page-6" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-6</p>
+                </div>
+                <div id="soal-6" class="question">
+                        <p>Properti float akan membuat elemen ditampilkan berjajar kekiri atau kekanan.
+                            Properti clear biasa digunakan berpasangan dengan float. Nilai yang bisa diberikan untuk 
+                            properti clear adalah...
+                        </p>
+                </div>
+                <div id="jawaban-6" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>pixel, procentage, absolute</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>top, bottom, middle</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>ball, none, inherit</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>left, right, both</p>
+                        </div>
+                </div>
+                <div id="button-6" class="button">
+                    <div class="back" id="back-6" onclick="backButton6()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-6" onclick="nextButton6()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 7 -->
+        <div class="page" id="page-7" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-7</p>
+                </div>
+                <div id="soal-7" class="question">
+                        <p>
+                            Status posisi suatu elemen dapat diatur menggunakan properti position yang dapat bernilai...
+                        </p>
+                </div>
+                <div id="jawaban-7" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>left, right, center, justify</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>auto, %, pixel, inherit</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>top, bottom, middle</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>fixed, relative, static, absolute</p>
+                        </div>
+                </div>
+                <div id="button-7" class="button">
+                    <div class="back" id="back-7" onclick="backButton7()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-7" onclick="nextButton7()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 8 -->
+        <div class="page" id="page-8" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-8</p>
+                </div>
+                <div id="soal-8" class="question">
+                        <p>
+                            Berikut ini atribut yang digunakan dalam <em>form </em> kecuali...
+                        </p>
+                </div>
+                <div id="jawaban-8" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>method</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>name</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>action</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>placeholder</p>
+                        </div>
+                </div>
+                <div id="button-8" class="button">
+                    <div class="back" id="back-8" onclick="backButton8()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-8" onclick="nextButton8()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 9 -->
+        <div class="page" id="page-9" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-9</p>
+                </div>
+                <div id="soal-9" class="question">
+                        <p>
+                            Elemen &#60;canvas&#62; &#60;&#47;canvas&#62; digunakan untuk..
+                        </p>
+                </div>
+                <div id="jawaban-9" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Manipulasi data</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Menampilkan jenis huruf</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Membuat grafis</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Menampilkan gambar dinamis</p>
+                        </div>
+                </div>
+                <div id="button-9" class="button">
+                    <div class="back" id="back-7" onclick="backButton9()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-7" onclick="nextButton9()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 10 -->
+        <div class="page" id="page-10" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-10</p>
+                </div>
+                <div id="soal-10" class="question">
+                        <p>
+                            Untuk membuat radio button menggunakan syntax...
+                        </p>
+                </div>
+                <div id="jawaban-10" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>&#60;radio&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>&#60;input type="radio_button"&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>&#60;input type=radio"&#62;</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>&#60;radio_button&#62;</p>
+                        </div>
+                </div>
+                <div id="button-10" class="button">
+                    <div class="back" id="back-7" onclick="backButton10()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-7" onclick="nextButton10()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 11 -->
+        <div class="page" id="page-11" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-11</p>
+                </div>
+                <div id="soal-11" class="question">
+                        <p>
+                            Atribut alt pada &#60;img&#62; berfungsi untuk...
+                        </p>
+                </div>
+                <div id="jawaban-11" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Menampilkan alternatif teks ketika gambar tidak bisa ditampilkan</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Membuat gambar dengan animasi</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Mengatur ukuran gambar</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Mengatur jarak gambar dengan elemen lain</p>
+                        </div>
+                </div>
+                <div id="button-11" class="button">
+                    <div class="back" id="back-11" onclick="backButton11()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-11" onclick="nextButton11()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 12 -->
+        <div class="page" id="page-12" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-12</p>
+                </div>
+                <div id="soal-12" class="question">
+                        <p>
+                            Untuk membuat baris baru menggunakan tag...
+                        </p>
+                </div>
+                <div id="jawaban-12" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>&#60;br&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>&#60;newline&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>&#60;break&#62;</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>&#60;hr&#62;</p>
+                        </div>
+                </div>
+                <div id="button-12" class="button">
+                    <div class="back" id="back-12" onclick="backButton12()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-12" onclick="nextButton12()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 13 -->
+        <div class="page" id="page-13" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-13</p>
+                </div>
+                <div id="soal-13" class="question">
+                        <p>
+                            Tag yang digunakan untuk menampilkan informasi dalam bentuk list adalah...
+                        </p>
+                </div>
+                <div id="jawaban-13" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>&#60;li&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>&#60;ul&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>&#60;ol&#62;</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>&#60;tr&#62;</p>
+                        </div>
+                </div>
+                <div id="button-13" class="button">
+                    <div class="back" id="back-13" onclick="backButton13()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-13" onclick="nextButton13()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 14 -->
+        <div class="page" id="page-14" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-14</p>
+                </div>
+                <div id="soal-14" class="question">
+                        <p>
+                            Tag yang digunakan untuk menentukan kelompok dari satu kolom atau lebih dalam sebuah tabel untuk
+                            performatan adalah...
+                        </p>
+                </div>
+                <div id="jawaban-14" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>&#60;footer&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>&#60;colgroup&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>&#60;groupcol&#62;</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>&#60;div&#62;</p>
+                        </div>
+                </div>
+                <div id="button-14" class="button">
+                    <div class="back" id="back-14" onclick="backButton14()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-14" onclick="nextButton14()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 15 -->
+        <div class="page" id="page-15" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-15</p>
+                </div>
+                <div id="soal-15" class="question">
+                        <p>
+                            Fungsi sebuah tag &#60;a href="https://www.petanikode.com"&#62;belajar html &#60;/a&#62; adalah...
+                        </p>
+                </div>
+                <div id="jawaban-15" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Untuk memberikan teks petanikode.com pada halaman web</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Untuk memberikan tombol/link menuju ke halaman https://www.petanikode.com</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Untuk memberikan penomoran pada tulisan belajar html</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Untuk memberikan format judul pada tulisan https://www.petanikode.com</p>
+                        </div>
+                </div>
+                <div id="button-15" class="button">
+                    <div class="back" id="back-15" onclick="backButton15()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-15" onclick="nextButton15()">
+                        <span class="writing-arrow">Selesai</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

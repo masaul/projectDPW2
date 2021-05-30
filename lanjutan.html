@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Online</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz Online</h1>
+    </header>
+    <main>
+        <!-- Menampilkan Soal dan Jawaban nomer 1 -->
+        <div class="page" id="page-1" style="display: block;">
+            <div class="container">
+                    <div class="number">
+                        <p>Soal Ke-1</p>
+                    </div>
+                    <div id="soal-1" class="question">
+                        <p>Perhatikan potongan kode javascript berikut ini : <br>
+                            <code>var arr = new Array(100,350,275,300);</code> <br>
+                            Untuk mengambil nilai elemen 275 dari array diatas, perintah yang benar...
+                        </p>
+                    </div>
+                    <div id="jawaban-1" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>
+                                <code>var nilai=arr[1]</code>
+                            </p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p><code>var nilai=arr(1)</code></p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p><code>var nilai=arr[2]</code></p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p><code>var nilai=arr(2)</code></p>
+                        </div>
+                    </div>
+                    <!-- Button  -->
+                    <div id="button-1" class="button">
+                        <div class="back" id="back-1" onclick="backButton1()">
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                            <span class="writing-arrow"><a href="halamanAwal.html">Keluar</a></span>
+                        </div>
+                        <div class="next" id="next-1" onclick="nextButton1()">
+                            <span class="writing-arrow">Next</span>
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 2 -->
+        <div class="page" id="page-2" style="display: none;">
+            <div class="container">
+                    <div class="number">
+                        <p>Soal Ke-2</p>
+                    </div>
+                    <div id="soal-2" class="question">
+                        <p>Struktur kondisi yang ada dibahasa javascript sebagai berikut, keculai...</p>
+                    </div>
+                    <div id="jawaban-2" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Case</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Switch</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>if</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>if_else</p>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div id="button-2" class="button">
+                        <div class="back" id="back-2" onclick="backButton2()">
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                            <span class="writing-arrow">Back</span>
+                        </div>
+                        <div class="next" id="next-2" onclick="nextButton2()">
+                            <span class="writing-arrow">Next</span>
+                            <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 3 -->
+        <div class="page" id="page-3" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-3</p>
+                </div>
+                <div id="soal-3" class="question">
+                        <p>Untuk membuat tombol (button) menggunakan tag...</p>
+                </div>
+                <div id="jawaban-3" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p> &#60;button&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p> &#60;input type="button"&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Jawaban A dan B benar</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Semua jawaban salah</p>
+                        </div>
+                </div>
+                <div id="button-3" class="button">
+                    <div class="back" id="back-3" onclick="backButton3()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-3" onclick="nextButton3()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 4 -->
+        <div class="page" id="page-4" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-4</p>
+                </div>
+                <div id="soal-4" class="question">
+                        <p>Untuk memasukkan kode javascript dalam dokumen HTML menggunakan tag...</p>
+                </div>
+                <div id="jawaban-4" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>&#60;script&#62;</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>&#60;javascript&#62;</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>&#60;js&#62;</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Jawaban A, B dan C benar</p>
+                        </div>
+                </div>
+                <div id="button-4" class="button">
+                    <div class="back" id="back-4" onclick="backButton4()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-4" onclick="nextButton4()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 5 -->
+        <div class="page" id="page-5" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-5</p>
+                </div>
+                <div id="soal-5" class="question">
+                        <p>Fungsi dari getElementById bekerja dengan cara...</p>
+                </div>
+                <div id="jawaban-5" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Merujuk kepada semua elemen HTML didalam dokumen</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Merujuk kepada sekelompok elemen HTML dengan ID yang sama</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Merujuk kepada suatu elemen HTML dengan ID tertentu</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Merujuk kepada nilai suatu element HTML</p>
+                        </div>
+                </div>
+                <div id="button-5" class="button">
+                    <div class="back" id="back-5" onclick="backButton5()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-5" onclick="nextButton5()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 6 -->
+        <div class="page" id="page-6" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-6</p>
+                </div>
+                <div id="soal-6" class="question">
+                        <p>Syntax javascript untuk mengatur gaya tampilan elemen HTML yang benar dibawah ini adalah...
+                        </p>
+                </div>
+                <div id="jawaban-6" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p><code>document.getElementById(namaID).object.namaProperti=nilaiProperti</code></p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p><code>document.getElementById(namaID).css.namaProperti=nilaiProperti</code></p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p><code>document.getElementById(namaID).presentation.namaProperti=nilaiProperti</code></p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p><code>document.getElementById(namaID).style.namaProperti=nilaiProperti</code></p>
+                        </div>
+                </div>
+                <div id="button-6" class="button">
+                    <div class="back" id="back-6" onclick="backButton6()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-6" onclick="nextButton6()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 7 -->
+        <div class="page" id="page-7" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-7</p>
+                </div>
+                <div id="soal-7" class="question">
+                        <p>
+                            Argumen dari fungi javascript getElementById adalah...
+                        </p>
+                </div>
+                <div id="jawaban-7" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Nama suatu elemen HTML yang dibuat menggunakan atribut class</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Nama suatu elemen HTML yang dibuat menggunakan atribut ID</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Identitas suatu elemen yang dibuat menggunakan atribut class</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Identitas suatu elemen yang dibuat menggunakan atribut ID</p>
+                        </div>
+                </div>
+                <div id="button-7" class="button">
+                    <div class="back" id="back-7" onclick="backButton7()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-7" onclick="nextButton7()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 8 -->
+        <div class="page" id="page-8" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-8</p>
+                </div>
+                <div id="soal-8" class="question">
+                        <p>
+                            Jenis-jenis node di javascript adalah...
+                        </p>
+                </div>
+                <div id="jawaban-8" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>elemen, atribut, text, document</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>HTML, atribut, document</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>CSS, element, text, document</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>HTML, CSS, text, document</p>
+                        </div>
+                </div>
+                <div id="button-8" class="button">
+                    <div class="back" id="back-8" onclick="backButton8()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-8" onclick="nextButton8()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 9 -->
+        <div class="page" id="page-9" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-9</p>
+                </div>
+                <div id="soal-9" class="question">
+                        <p>
+                            Didalam HTML onfocus merupakan bagian dari atribut...
+                        </p>
+                </div>
+                <div id="jawaban-9" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Atributu style</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Atribut event</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Atribut media</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Atribut HTML</p>
+                        </div>
+                </div>
+                <div id="button-9" class="button">
+                    <div class="back" id="back-7" onclick="backButton9()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-7" onclick="nextButton9()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 10 -->
+        <div class="page" id="page-10" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-10</p>
+                </div>
+                <div id="soal-10" class="question">
+                        <p>
+                            Format penulisan sintaks CSS yang benar adalah...
+                        </p>
+                </div>
+                <div id="jawaban-10" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Selector {Property: value;}</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Property {Selector: value;}</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Value {Property: selector;}</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Selector {value: property;}</p>
+                        </div>
+                </div>
+                <div id="button-10" class="button">
+                    <div class="back" id="back-7" onclick="backButton10()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-7" onclick="nextButton10()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 11 -->
+        <div class="page" id="page-11" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-11</p>
+                </div>
+                <div id="soal-11" class="question">
+                        <p>
+                            Perintah unordered dengan Type Square digunakan untuk mendeskripsikan...
+                        </p>
+                </div>
+                <div id="jawaban-11" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Bullet segitiga</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Bullet titik</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Bullet kotak</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Bullet lingkaran</p>
+                        </div>
+                </div>
+                <div id="button-11" class="button">
+                    <div class="back" id="back-11" onclick="backButton11()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-11" onclick="nextButton11()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 12 -->
+        <div class="page" id="page-12" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-12</p>
+                </div>
+                <div id="soal-12" class="question">
+                        <p>
+                            Type yang berfungsi untuk menerima masukan berupa teks dari penguna dalam formulir adalah...
+                        </p>
+                </div>
+                <div id="jawaban-12" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>submit</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>reset</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>text</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>radio</p>
+                        </div>
+                </div>
+                <div id="button-12" class="button">
+                    <div class="back" id="back-12" onclick="backButton12()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-12" onclick="nextButton12()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 13 -->
+        <div class="page" id="page-13" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-13</p>
+                </div>
+                <div id="soal-13" class="question">
+                        <p>
+                            Yang tidak digunakanuntuk mengatur latar belakang (background) adalah :
+                        </p>
+                </div>
+                <div id="jawaban-13" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>background-color</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>background-image</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p> background-position</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>background-font</p>
+                        </div>
+                </div>
+                <div id="button-13" class="button">
+                    <div class="back" id="back-13" onclick="backButton13()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-13" onclick="nextButton13()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 14 -->
+        <div class="page" id="page-14" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-14</p>
+                </div>
+                <div id="soal-14" class="question">
+                        <p>
+                            Yang bukan bagian dari CSS adalah...
+                        </p>
+                </div>
+                <div id="jawaban-14" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>Deklarasi</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>Selector</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>Property</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>Tag</p>
+                        </div>
+                </div>
+                <div id="button-14" class="button">
+                    <div class="back" id="back-14" onclick="backButton14()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-14" onclick="nextButton14()">
+                        <span class="writing-arrow">Next</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menampilkan Soal dan Jawaban nomer 15 -->
+        <div class="page" id="page-15" style="display: none;">
+            <div class="container">
+                <div class="number">
+                    <p>Soal Ke-15</p>
+                </div>
+                <div id="soal-15" class="question">
+                        <p>
+                            Type yang digunakan untuk menerima masukkan berupa pilihan. Pilihan yang dipilih bisa lebih dari satu adalah...
+                        </p>
+                </div>
+                <div id="jawaban-15" class="answer">
+                        <div class="abjad a">
+                            <h3>A.</h3>
+                            <p>checkbox</p>
+                        </div>
+                        <div class="abjad b">
+                            <h3>B.</h3>
+                            <p>button</p>
+                        </div>
+                        <div class="abjad c">
+                            <h3>C.</h3>
+                            <p>radio</p>
+                        </div>
+                        <div class="abjad d">
+                            <h3>D.</h3>
+                            <p>submit</p>
+                        </div>
+                </div>
+                <div id="button-15" class="button">
+                    <div class="back" id="back-15" onclick="backButton15()">
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="writing-arrow">Back</span>
+                    </div>
+                    <div class="next" id="next-15" onclick="nextButton15()">
+                        <span class="writing-arrow">Selesai</span>
+                        <span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
